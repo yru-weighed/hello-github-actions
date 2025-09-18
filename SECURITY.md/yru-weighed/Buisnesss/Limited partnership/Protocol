@@ -1,0 +1,159 @@
+# Security Policy
+
+## Supported Versions
+
+Use this section to tell people about which versions of your project are
+currently being supported with security updates.
+
+| Version | Supported          |
+| ------- | ------------------ |
+| 5.1.x   | :white_check_mark: |
+| 5.0.x   | :x:                |
+| 4.0.x   | :white_check_mark: |
+| < 4.0   | :x:                |
+
+## Reporting a Vulnerability specification of buisness and security technology 
+GDPR-Transparency-and-Consent-Framework
+Use this section to tell people how to report a vulnerability.
+IAB Europe Transparency and Consent Framework Implementation Guidelines
+
+Preview
+
+Code
+
+Blame
+IAB Europe Transparency and Consent Framework Implementation Guidelines
+Last update	May 2023
+Created	August 2019
+This document provides technical implementation guidelines related to the IAB Europe Transparency and Consent Framework (TCF) v2.2 technical specs. The IAB Tech Lab GDPR Technical Working Group has collaborated on the following implementation guidelines, and will continue to produce resources supporting industry adoption of the Framework. The intended audience of this document includes product and engineering teams who are building technology based on this framework, and who are looking for guidance on implementation strategies such as questions to ask your platform partners or avoiding common pitfalls.
+
+Policy FAQ, webinars, and other resources are available at https://www.iabeurope.eu/tcf)
+
+Introduction to the TCF
+Common Questions
+    Do I need to read the Policy?
+    What changed in v2.3?
+    What changed in v2.2?
+    What changed in v2.1?
+    What changed in v2?
+        Within the Transparency and Consent String (TC String)
+        Within the Global Vendor List (GVL) Format
+        Within the Consent Management Platform API
+    How do I evaluate the details provided in the TC String?
+    How should I handle multiple signals with different information?
+
+Publisher guidelines
+    What is a Consent Management Platform (CMP) and why do I, as a Publisher, need one?
+    What publisher controls are available?
+    The Global Vendor List
+    Withdrawal of consent
+
+Vendor guidelines
+    How do I find the TC String?
+    How do I send the TC string?
+    How to determine legal bases from the TC String?
+    How to determine if data may be transmitted?
+    What if I don’t receive the TC string?
+    How do I determine which Global Vendor List to use?
+    **What else is there to consider when integrating with the TCF?
+
+Consent Management Platform (CMP) guidelines
+    Collecting consent from users
+    Sharing consent with vendors
+    Storing Consent
+    Other GDPR rights
+    Encoding publisher restrictions
+    CMP interface requirements
+
+Other Frequently Asked Questions
+    Are cookies required for working with the CMP API?
+    Can I also use the API for CCPA or other laws?
+    Related resources
+    Will these FAQ be updated?
+    How can I learn more?
+
+Introduction to the TCF
+The Transparency and Consent Framework (TCF) was created to help all parties who display and manage digital advertising and develop targeted content comply with the European Union’s General Data Protection Regulation (GDPR) and ePrivacy Directive (ePD) when processing personal data and/or accessing and/or storing information on a user’s device.
+
+It allows publishers and website operators to communicate to vendors, in a standardized way, what preferences users have expressed when it comes to their personal data. A vendor is a company that participates in the delivery of digital advertising within a publisher’s website, app, or other digital content, that either accesses an end user’s device or browser or processes personal data about end users visiting the publishers content.
+
+The TCF was first introduced in April 2018. This document refers to version 2.2 of the TCF, announced in May 2023, which introduces significant changes and is not backward-compatible with the earlier versions.
+
+The communication between publishers and vendors must pass through a Consent Management Platform (CMP). A CMP can be operated by anyone, as long as the entity that operates it has completed registration and is approved by IAB Europe. A list of all approved CMPs is available here.
+
+CMPs centralise and manage transparency for and consent and objections of the end users, acting as an intermediary between the Publisher, end user and vendors, using information distributed via the Global Vendor List (GVL), which contains the updated list of vendors adhering to the framework. Please refer to the Policy for complete definition of a CMP. Only CMPs can write the Transparency and Consent string, where consent is stored. Their role is to make this information available to vendors within the technical specifications that the framework states.
+
+When configuring their CMP, publishers can make a number of decisions, including allowing only a selected list of vendors to process data through their properties. A current list of vendors adhering to the framework can be found here.
+
+Any party considering adoption of the TCF must read and follow the TCF Policies, outlined in the IAB Europe Transparency & Consent Framework Policies. Correct implementation of the framework is impossible without following the requirements in the TCF Policy.
+
+Who should read this document?
+Publishers, Vendors (DMP, AdServer, Advertisers, audience measurement solutions, …) and registered CMPs who want to work within the TCF can use this document as guidance to implement the technology to support their efforts. This document addresses common (technical) questions and makes it easier for companies to understand the coherences of the TCF policy and technical specifications.
+
+How can I submit my questions?
+You can learn more about IAB Tech Lab's support of the TCF and involvement with IAB Europe at the following URL: https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/
+
+General information about the TCF can be found at: https://iabeurope.eu/transparency-consent-framework/.
+
+You can also submit your inquiries and questions regarding the TCF to framework@iabeurope.eu and transparencyframework@iabtechlab.com.
+
+Common Questions
+Do I need to read the Policy?
+Yes, the technical specifications for the Transparency and Consent (TC) String and CMP API were developed to support policies outlined in the Transparency and Consent Framework (TCF) Policies. Implementing the technology requires adherence to these policies.
+
+
+Tell them where to go, how often they can expect to get an update on a
+reported vulnerability, what to expect if the vulnerability is accepted or
+declined, etc.
+The Transparency & Consent Framework (TCF) v2.2
+The General Data Protection Regulation (GDPR), which came into force on 25 May 2018, changed the data privacy landscape in Europe. GDPR was designed to harmonise data privacy laws across Europe, giving individuals greater control and transparency over their personal data while raising the bar for businesses to achieve lawful processing of personal information.
+
+In anticipation of the entry into force of the GDPR, IAB Europe launched in February 2017 a collaborative effort by organising dedicated working groups attended by more than 70 member companies and sectoral trade associations, supported by the IAB Europe staff, to deliver, maintain and iterate an industry standard, the TCF, in an attempt to meet the needs of users, industry and regulators.
+
+On 25 April 2018, TCF v1.1 was launched after an extensive industry consultation with IAB Europe and IAB Tech Lab members, and the broader digital advertising industry.
+
+On 21 August 2019, TCF v2.0 was launched following extensive industry consultation particularly with publishers and the industry associations who represent all aspects of the industry.
+Version 2025-01-16.5.0.a
+This document lays out the Policies applicable to participants in the IAB Europe Transparency & Consent Framework.
+Participants may include publishers, advertisers, vendors, and/or CMPs. Each category of participant has specific obligations and requirements which are included in these Policies.
+Participants must adhere to these Policies to maintain their participation in the Framework.
+Participants must not amend, supplement, or modify their implementation of the Framework unless expressly provided for in the Policies or Specifications.
+Participants must follow applicable privacy and data protection laws. In the event of a conflict between applicable law and the Policies, the law prevails.
+Preamble
+
+Definitions
+Chapter I: Definitions
+1. “Transparency and Consent Framework” (the “Framework”, or the “TCF”) means the Framework comprising the various parts defined under these Policies. It has the objective to help all parties in the digital environment to comply with the EU’s General Data Protection Regulation (“GDPR”) and ePrivacy Directive (“ePD”) when processing personal data and/or accessing and/or storing information on a user’s device.
+
+2. “Interactive Advertising Bureau Europe aisbl” (“IAB Europe”, the “Managing Organization”, or the “MO”) means the entity that manages and governs the Framework, including the Policies, Specifications, and the GVL. IAB Europe may update these Policies from time to time as it reasonably determines is necessary to ensure the ongoing success of the Framework.
+
+3. “Framework Policies” (the “Policies”) means this or any other official policy documentation disseminated by IAB Europe and updated from time to time, that defines the requirements for compliant participation in, and use of, the Framework, including, but not limited to, Appendix A and Appendix B of these Policies, and any associated policy guidance, or publicly communicated, enforcement actions.
+
+4. “Framework Specifications” (the “Specifications”) means any official technical documentation disseminated by IAB Europe in concert with IAB Tech Lab or future designated technical body, and updated from time to time, that defines the technical implementation of the Framework, including, but not limited to, the Transparency and Consent String with Global Vendor List Format specification, the Consent Management Platform API specification, and any associated implementation guidance.
+
+5. “Global Vendor List” (the “GVL”, or the “Vendor List”) means the list of Vendors who have registered with IAB Europe for participating in the Framework. The list is managed and maintained by IAB Europe, and is referenced by CMPs, Publishers and individual Vendors. Its structure and content shall be defined by the Specifications.
+
+6. “Transparency and Consent Management Platform” (“Consent Management Platform”, or “CMP”) means the company or organisation that centralises and manages transparency for, and consent and objections of the end user. The CMP can read and update the Legal Basis status of Vendors on the GVL, and acts as an intermediary between a Publisher, an end user, and Vendors to provide transparency, help Vendors and Publishers establish Legal Bases for processing, acquire user consent as needed and manage user objections, and communicate Legal Basis, consent or and/or objection status to the ecosystem. A CMP may be the party that surfaces, usually on behalf of the publisher, the UI to a user, though that may also be another party. CMPs may be private or commercial. A private CMP means a Publisher that implements its own CMP for its own purposes. A commercial CMP offers CMP services to other parties. Unless specifically noted otherwise, these policies apply to both private and commercial CMPs.
+
+7. “Vendor” means a company that participates in the delivery of digital advertising or other online activities within a Publisher’s website, app, or other digital content, to the extent that company is not acting as a Publisher or CMP, and that either accesses an end user’s device or processes personal data about end users visiting the Publisher’s content and adheres to the Policies. A Vendor may be considered under the GDPR to be a Controller, a Processor, or both, depending on specific circumstances.
+
+8. “Publisher” means an operator of a Digital Property and who is primarily responsible for ensuring the Framework UI is presented to users and that Legal Bases, including consent, are established with respect to Vendors that may process personal data based on users’ visits to the Publisher’s content.
+
+9. “Digital Property” means a website, app, or other content or service delivery mechanism where digital ads and/or content are displayed, or information is collected and/or used for any Purpose or Special Purpose.
+
+10. “Framework UI” (“UI”) means the user interface or user experience defined by the Specifications for presentation to a user in order to establish Legal Bases for GVL Vendors as part of their compliance with European privacy and data protection laws. The Policies and Specifications define requirements for the UI along with aspects that are configurable by Publishers.
+
+11. “Initial Layer” refers to information that must be made visible to the user in the UI prior to the user being able to give his or her consent. For the avoidance of doubt, the use of the term “visible” should not be understood as excluding other forms of information presentation used, for example, for assisted internet access, or on devices with non-visual user interfaces.
+
+12. “Purpose” means one of the defined purposes for processing of data, including users’ personal data, by participants in the Framework that are defined in the Policies or the Specifications for which Vendors declare a Legal Basis in the GVL and for which the user is given choice, i.e. to consent or to object depending on the Legal Basis for the processing, by a CMP.
+
+13. “Special Purpose” means one of the defined purposes for processing of data, including users’ personal data, by participants in the Framework that are defined in the Policies or the Specifications for which Vendors declare a Legal Basis in the GVL and for which the user is not given choice by a CMP.
+
+14. “Feature” means one of the features of processing personal data used by participants in the Framework that are defined in the Policies or the Specifications used in pursuit of one or several Purposes for which the user is not given choice separately to the choice afforded regarding the Purposes for which they are used.
+i. The Transparency and Consent Framework consists of a set of technical specifications and policies to which publishers, advertisers, technology providers, and others for whom the Framework is of interest may voluntarily choose to adhere.
+
+ii. The goal of the Framework is to help players in the online ecosystem meet certain requirements of the ePrivacy Directive (and by extension its successor, the upcoming ePrivacy Regulation), and General Data Protection Regulation by providing a way of informing users about inter alia the storing and/or accessing of information on their devices, the fact that their personal data is processed, the purposes for which their personal data is processed, the companies that are seeking to process their personal data for these purposes, providing users with choice about the same, and signalling to third parties inter alia which information has been disclosed to users and what users’ choices are. For the avoidance of doubt, the Framework also serves to help meet requirements of the UK’s General Data Protection Regulation and the UK’s Privacy and Electronic Communications Regulations, to the extent that the relevant provisions in the former remain identical to those of the EU’s General Data Protection Regulation, and that the relevant provisions in the latter remain consistent with an implementation of the EU’s ePrivacy Directive.
+
+On 19 August 2020, TCF v2.1 was launched to bring the TCF in-line with Planet49 ruling issued by the Court of Justice of the European Union and standardise the disclosure of the duration of operation of cookies.
+
+On 16 May 2023, TCF v2.2 was launched to respond to the changes and needs of the industry, and introduce a number of iterations that relates to the Action Plan submitted to and validated by the Belgian Data Protection Authority (
