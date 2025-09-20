@@ -1,0 +1,66 @@
+
+COMPLICATED INVESTIGATION GOOGLE FINANCE 
+COMPLAINCE, IDENTITY THIEFT, PAYPAL ANTITRUST 
+Guidelines/
+PSD2 Compliance
+Payment Services Directive 2 (PSD2) Compliance
+DOCS
+CURRENT
+The Payment Services Directive 2 (PSD2) regulates online payment services and providers in Europe. PSD2 enables open banking by introducing Access to Account (XS2A). XS2A allows customers to use the services of third-party providers to access account information or initiate transactions on their behalf. PSD2 gives providers a regulated, open market to compete in, while providing customers more payment options and increased security.
+
+PSD2 goals
+The following list defines some of the goals of PSD2:
+
+Defining third-party license types—To facilitate XS2A Account Access, PSD2 defines two types of third-party providers (TPPs) regulated by National Competent Authorities:
+Account Information Service Providers (AISPs): Service providers that aggregate and display the customer's online account information of one or more accounts held at one or more account servicing payment service providers (ASPSPs).
+Payment Initiation Service Providers (PISPs): Service providers that initiate payment transactions on behalf of the customer.
+Increasing customer security—PSD2 includes Strong Customer Authentication (SCA), an authentication process that validates the user's identity of a payment service or a payment transaction. For more information, see PSD2.
+Increasing communication security with TPPs—PSD2 requires TPPs to use electronic Identification, Authentication, and trust Services (eIDAS) certificates for electronic signatures and electronic seals. Qualified Trust Service Providers (QTSPs) issue the eIDAS certificates, further ensuring security.
+PayPal's XS2A implementation
+PayPal enables XS2A use cases for TPPs through PayPal’s REST stack. Through PayPal's reliable and proven APIs, TPPs can access the same PayPal systems that power all of PayPal's merchant and consumer experiences.
+
+PayPal provides interfaces and necessary documentation for TPPs that explain XS2A use cases like the following:
+
+Accessing a PayPal user’s account information, such as account balances and transaction history.
+Initiating payments from a PayPal user’s account to another PayPal user.
+Contact us
+
+Are you an AISP or PISP looking to connect to PayPal? Contact us or Register as a third-party provider with PayPal. After registering with us, we will verify your TPP License Certificate, enable PayPal XS2A Scopes on your REST Client ID, and email your TPP registered email address. You can start integrating and testing PayPal XS2A to Go Live.
+
+Note: If you are a UK-based TPP, you can programmatically register your application using Dynamic Client Registration.
+
+Interface performance
+
+PayPal's XS2A interface leverages PayPal's high-performance REST API stack to ensure best performance and availability for TPP access. Download this datasheet to review PayPal’s interface performance data.
+
+PayPal UK Ltd under the payment services regulations
+
+From 1 November 2023, PayPal UK must also publish information on the performance and availability of dedicated interfaces for third-party access. Download this datasheet to review PayPal UK Ltd’s interface performance data.
+
+PSD2 glossary
+Here's a list of commonly used PSD2 terms.
+
+Term	Definition
+API	Application Programming Interface
+AISP	Account Information Service Providers
+ASPSPs	Account Servicing Payment Service Providers
+EEA	European Economic Area
+eIDAS	Electronic Identification, Authentication and Trust Services
+EU	European Union
+NCA	National Competent Authority
+PISP	Payment Initiation Service Providers
+PSD2	Payment Services Directive 2
+QTSPs	Qualified Trust Service Providers
+RTS	Regulatory Technical Standards on Strong Consumer Authentication and Secure Communication
+SCA	Strong Customer Authentication
+TPPs	Third-Party Providers
+XS2A	Access to Account
+
+Legal
+
+ENFORCEMENT ANTI TRUST PAYPAL SOCIAL MEDIA PLATFORM ABANDONED PAYPAL PHILIPPINES PAYMENT 
+LINKED IN, INSTAGRAM, FACEBOOK VIOLATION ANTI TRUST 
+FRAUD DETECTION SYSTEM CPAYPAL FISPUTE OF RESOLUTION CASES 
+BANK MERGER,  COMPLICATED THE ISSUE FRUAD GCASH, PHILIPPINES CRIMINAL CASES INVESTIGATION GOOGLE FINANCE LLC REVIEWS FOCUS TO THOSE ABUSED THE DEVELOPER 
+WITHOUT BRING ACKNOWLEDGE.
+Contact
